@@ -21,6 +21,7 @@
 # - [Imports](#IMPORTS)
 # - [Standard functions](#FUNCTIONS)
 # - [OpenPrescribing BNF codes](#OPBNF)
+# - [Item / quantity plots](#CHARTS)
 # - [Injections of different durations](#INJDURATION)
 
 # <a id='IMPORTS'></a>
