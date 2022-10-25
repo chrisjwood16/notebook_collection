@@ -37,9 +37,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 #set to display all rows in data
-pd.set_option('display.max_rows', None)
-
-
+#pd.set_option('display.max_rows', None)
 # -
 
 # <a id='FUNCTIONS'></a>
@@ -47,7 +45,6 @@ pd.set_option('display.max_rows', None)
 # Setup standard functions
 
 def plot(df, column_to_plot, chart_title, y_label, y_min='default', y_max='default', lockdownline=False):
-    
     ax = df.groupby(["month"])[column_to_plot].sum().plot(kind='line', title=chart_title)
     plt.xticks(rotation=90);
     plt.ylabel(y_label);
@@ -56,7 +53,7 @@ def plot(df, column_to_plot, chart_title, y_label, y_min='default', y_max='defau
     else:
         y_max=df[column_to_plot].max() * 1.05
     if (lockdownline):
-        plt.vlines(x=[pd.to_datetime("2020-03-23")], ymin=0, ymax=y_max, colors="red", ls="--", label="Start of restrictions");
+        plt.vlines(x=[pd.to_datetime("2020-03-23")], ymin=0, ymax=int(y_max), colors="red", ls="--", label="Start of restrictions");
     plt.grid();
 
 
@@ -80,28 +77,29 @@ SELECT
                                  "0803042A0BBABAB", "0803042E0AAAAAA", "0803042E0AAABAB", "0803042E0AAADAD", "0803042E0AAAEAE", 
                                  "0803042E0AAAFAF", "0803042E0AAAHAH", "0803042E0AAAIAI", "0803042E0BBAAAA", "0803042E0BBABAB", 
                                  "0803042H0AAAAAA", "0803042H0BBAAAA", "0803042H0BCAAAA")  THEN quantity ELSE 0 END) as OralADTqty,
-     SUM (CASE WHEN bnf_code IN ("0803042B0BBAAAA", "0803042K0AAAAAA", "0803042K0AAABAB", "0803042K0BBAAAA", "0803042K0BBABAB", 
-                                 "0803042K0BCAAAA", "0803042N0AAAAAA", "0803042N0AAABAB", "0803042N0AAACAC", "0803042N0AAADAD", 
-                                 "0803042N0AAAEAE", "0803042N0AAAFAF", "0803042N0BBAAAA", "0803042N0BBABAB", "0803042N0BBACAC", 
-                                 "0803042N0BBADAD", "0803042N0BCAAAA", "0803042N0BCABAE", "0803042N0BDAAAF", "0803042P0AAAAAA", 
-                                 "0803042P0AAABAB", "0803042P0AAACAC", "0803042P0BBAAAA", "0803042P0BBABAC", "0803042P0BCAAAB", 
-                                 "0803042R0AAAAAA", "0803042R0AAABAB", "0803042R0BBAAAA", "0803042R0BBABAB", "0803042S0AAABAB", 
-                                 "0803042S0BCAAAB")  THEN items ELSE 0 END) as InjADTitems,
-     SUM (CASE WHEN bnf_code IN ("0803042B0BBAAAA", "0803042K0AAAAAA", "0803042K0AAABAB", "0803042K0BBAAAA", "0803042K0BBABAB", 
-                                 "0803042K0BCAAAA", "0803042N0AAAAAA", "0803042N0AAABAB", "0803042N0AAACAC", "0803042N0AAADAD", 
-                                 "0803042N0AAAEAE", "0803042N0AAAFAF", "0803042N0BBAAAA", "0803042N0BBABAB", "0803042N0BBACAC", 
-                                 "0803042N0BBADAD", "0803042N0BCAAAA", "0803042N0BCABAE", "0803042N0BDAAAF", "0803042P0AAAAAA", 
-                                 "0803042P0AAABAB", "0803042P0AAACAC", "0803042P0BBAAAA", "0803042P0BBABAC", "0803042P0BCAAAB", 
-                                 "0803042R0AAAAAA", "0803042R0AAABAB", "0803042R0BBAAAA", "0803042R0BBABAB", "0803042S0AAABAB", 
-                                 "0803042S0BCAAAB")  THEN quantity ELSE 0 END) as InjADTqty,
+     SUM (CASE WHEN bnf_code IN ("0803042B0AAAAAA", "0803042B0BBAAAA", "0803042K0AAAAAA", "0803042K0AAABAB", "0803042K0BBAAAA", 
+                                 "0803042K0BBABAB", "0803042K0BCAAAA", "0803042N0AAAAAA", "0803042N0AAABAB", "0803042N0AAACAC", 
+                                 "0803042N0AAADAD", "0803042N0AAAEAE", "0803042N0AAAFAF", "0803042N0BBAAAA", "0803042N0BBABAB", 
+                                 "0803042N0BBACAC", "0803042N0BBADAD", "0803042N0BCAAAA", "0803042N0BCABAE", "0803042N0BDAAAF", 
+                                 "0803042P0AAAAAA", "0803042P0AAABAB", "0803042P0BBAAAA", "0803042P0BCAAAB", "0803042R0AAAAAA", 
+                                 "0803042R0AAABAB", "0803042R0BBAAAA", "0803042R0BBABAB", "0803042S0AAABAB", "0803042S0BCAAAB", 
+                                 "0803042W0AAAAAA", "0803042W0BBAAAA")  THEN items ELSE 0 END) as InjADTitems,
+     SUM (CASE WHEN bnf_code IN ("0803042B0AAAAAA", "0803042B0BBAAAA", "0803042K0AAAAAA", "0803042K0AAABAB", "0803042K0BBAAAA", 
+                                 "0803042K0BBABAB", "0803042K0BCAAAA", "0803042N0AAAAAA", "0803042N0AAABAB", "0803042N0AAACAC", 
+                                 "0803042N0AAADAD", "0803042N0AAAEAE", "0803042N0AAAFAF", "0803042N0BBAAAA", "0803042N0BBABAB", 
+                                 "0803042N0BBACAC", "0803042N0BBADAD", "0803042N0BCAAAA", "0803042N0BCABAE", "0803042N0BDAAAF", 
+                                 "0803042P0AAAAAA", "0803042P0AAABAB", "0803042P0BBAAAA", "0803042P0BCAAAB", "0803042R0AAAAAA", 
+                                 "0803042R0AAABAB", "0803042R0BBAAAA", "0803042R0BBABAB", "0803042S0AAABAB", "0803042S0BCAAAB", 
+                                 "0803042W0AAAAAA", "0803042W0BBAAAA")  THEN quantity ELSE 0 END) as InjADTqty,
  FROM hscic.normalised_prescribing
  WHERE month >= '2015-01-01'
  GROUP BY month
  ORDER BY month'''
 
 OP_DF = bq.cached_read(sql, csv_path=os.path.join('../..','data','OPADT.csv'))
-OP_DF
 # -
+
+OP_DF.dtypes
 
 OP_DF['OralADTqty_per_item']=OP_DF['OralADTqty']/OP_DF['OralADTitems']
 OP_DF['InjADTqty_per_item']=OP_DF['InjADTqty']/OP_DF['InjADTitems']
@@ -111,10 +109,12 @@ OP_DF
 # ### Item/quantity plots
 #
 # Generate plots from data in above
-# 1. Oral ADT items dispensed per month - from English Prescribing Dataset
-# 2. Oral ADT quantity dispensed per month - from English Prescribing Dataset
-# 3. Injectable ADT items dispensed per month - from English Prescribing Dataset
-# 4. Injectable ADT quantity dispensed per month - from English Prescribing Dataset
+# 1. Injectable ADT items dispensed per month - from English Prescribing Dataset
+# 2. Injectable ADT quantity dispensed per month - from English Prescribing Dataset
+# 3. Injectable ADT quantity per item dispensed per month - from English Prescribing Dataset
+# 4. Oral ADT items dispensed per month - from English Prescribing Dataset
+# 5. Oral ADT quantity dispensed per month - from English Prescribing Dataset
+# 6. Oral ADT quantity per item dispensed per month - from English Prescribing Dataset
 
 plot(
     df=OP_DF, 
@@ -141,7 +141,7 @@ plot(
     column_to_plot='InjADTqty_per_item', 
     chart_title="Injectable ADT quantity per item month - y-axis starts at 0", 
     y_label='Quantity per item', 
-    y_min=0.8, 
+    y_min=0, 
     y_max=OP_DF['InjADTqty_per_item'].max() * 1.05, 
     lockdownline=True
 )
@@ -195,7 +195,7 @@ SELECT
                                  "0803042P0BBAAAA", "0803042P0BCAAAB")  THEN items ELSE 0 END) as monthly,
      SUM (CASE WHEN bnf_code IN ("0803042K0AAABAB", "0803042K0BBABAB", "0803042N0AAABAB", "0803042N0AAADAD", "0803042N0AAAEAE", 
                                  "0803042N0AAAFAF", "0803042N0BBABAB", "0803042N0BBADAD", "0803042N0BCABAE", "0803042N0BDAAAF", 
-                                 "0803042P0AAACAC", "0803042P0BBABAC", "0803042S0AAACAC")  THEN items ELSE 0 END) as three_monthly,
+                                 "0803042P0AAACAC", "0803042P0BBABAC", "0803042S0AAACAC", "0803042W0BBAAAA", "0803042W0AAAAAA")  THEN items ELSE 0 END) as three_monthly,
      SUM (CASE WHEN bnf_code IN ("0803042S0AAABAB", "0803042S0BCAAAB")  THEN items ELSE 0 END) as six_monthly,
  FROM hscic.normalised_prescribing
  WHERE month >= '2015-01-01'
@@ -249,5 +249,7 @@ plot(
     y_max=OP_duration['normalised'].max() * 1.05, 
     lockdownline=True
 )
+
+
 
 
