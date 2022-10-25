@@ -235,4 +235,18 @@ plot(
     lockdownline=True
 )
 
+OP_duration['sixm_normalised']=OP_duration['six_monthly']*6
+OP_duration['threem_normalised']=OP_duration['three_monthly']*3
+OP_duration['normalised']=OP_duration['monthly']+OP_duration['three_monthly']+OP_duration['six_monthly']
+
+plot(
+    df=OP_duration, 
+    column_to_plot='normalised', 
+    chart_title="Normalised to Monthly injectable ADT items per month", 
+    y_label='Normalised items', 
+    y_min=0, 
+    y_max=OP_duration['normalised'].max() * 1.05, 
+    lockdownline=True
+)
+
 
