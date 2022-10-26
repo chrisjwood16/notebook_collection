@@ -197,6 +197,9 @@ SELECT
                                  "0803042N0AAAFAF", "0803042N0BBABAB", "0803042N0BBADAD", "0803042N0BCABAE", "0803042N0BDAAAF", 
                                  "0803042P0AAACAC", "0803042P0BBABAC", "0803042S0AAACAC", "0803042W0BBAAAA", "0803042W0AAAAAA")  THEN items ELSE 0 END) as three_monthly,
      SUM (CASE WHEN bnf_code IN ("0803042S0AAABAB", "0803042S0BCAAAB")  THEN items ELSE 0 END) as six_monthly,
+     SUM (CASE WHEN bnf_code IN ("0803042B0AAAAAA", "0803042B0BBAAAA", "0803042R0AAAAAA", "0803042R0AAABAB", "0803042R0BBAAAA", 
+                                 "0803042R0BBABAB")  THEN items ELSE 0 END) as other,
+     
  FROM hscic.normalised_prescribing
  WHERE month >= '2015-01-01'
  GROUP BY month
@@ -205,6 +208,8 @@ SELECT
 OP_duration = bq.cached_read(sql, csv_path=os.path.join('../..','data','OPinjduration.csv'))
 OP_duration
 # -
+
+# Plot of GnRH agonists given monthly
 
 plot(
     df=OP_duration, 
@@ -216,6 +221,8 @@ plot(
     lockdownline=True
 )
 
+# Plot of GnRH agonists given 3 monthly
+
 plot(
     df=OP_duration, 
     column_to_plot='three_monthly', 
@@ -225,6 +232,8 @@ plot(
     y_max=OP_duration['three_monthly'].max() * 1.05, 
     lockdownline=True
 )
+
+# Plot of GnRH agonists given 6 monthly
 
 plot(
     df=OP_duration, 
@@ -236,17 +245,15 @@ plot(
     lockdownline=True
 )
 
-OP_duration['sixm_normalised']=OP_duration['six_monthly']*6
-OP_duration['threem_normalised']=OP_duration['three_monthly']*3
-OP_duration['normalised']=OP_duration['monthly']+OP_duration['three_monthly']+OP_duration['six_monthly']
+# Plot of other ADT injections
 
 plot(
     df=OP_duration, 
-    column_to_plot='normalised', 
-    chart_title="Normalised to Monthly injectable ADT items per month", 
-    y_label='Normalised items', 
+    column_to_plot='other', 
+    chart_title="Other injectable ADT items per month", 
+    y_label='Items', 
     y_min=0, 
-    y_max=OP_duration['normalised'].max() * 1.05, 
+    y_max=OP_duration['other'].max() * 1.05, 
     lockdownline=True
 )
 
