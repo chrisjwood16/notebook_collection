@@ -245,7 +245,7 @@ plot(
     lockdownline=True
 )
 
-# Plot of other ADT injections
+# Plot of other ADT injections (Degarelix)
 
 plot(
     df=OP_duration, 
