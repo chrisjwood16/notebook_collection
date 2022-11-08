@@ -21,3 +21,4 @@ __pycache__/
 
 #Large TRUD files
 .data/TRUD/
+data/
