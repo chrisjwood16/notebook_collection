@@ -1,0 +1,153 @@
+Area_Code,Area_Name,Region/Country,Area_classification
+E34000776, Mablethorpe BUA, East Midlands, Smaller seaside town
+E34004327, Skegness BUA, East Midlands, Larger seaside town
+E34004315, Lowestoft BUA, East of England, Larger seaside town
+E35000390, Southend-on-Sea BUASD, East of England, Larger seaside town
+E34001609, Caister-on-Sea BUA, East of England, Smaller seaside town
+E34003679, Clacton-on-Sea BUA, East of England, Larger seaside town
+E35000402, Harwich BUASD, East of England, Smaller "other coastal" town
+E34003490, Hemsby BUA, East of England, Smaller seaside town
+E35001424, Leiston BUASD, East of England, Smaller "other coastal" town
+E35000084, Walton-on-the-Naze BUASD, East of England, Smaller seaside town
+E35000707, Cromer BUASD, East of England, Smaller seaside town
+E35000079, Gorleston-on-Sea BUASD, East of England, Larger seaside town
+E35000843, Great Yarmouth BUASD, East of England, Larger seaside town
+E35001404, Hunstanton BUASD, East of England, Smaller seaside town
+E34002505, West Mersea BUA, East of England, Smaller seaside town
+E34001940, Brightlingsea BUA, East of England, Smaller "other coastal" town
+E35000431, Felixstowe BUASD, East of England, Larger seaside town
+E35000634, Sheringham BUASD, East of England, Smaller seaside town
+E34001445, Ashington (Northumberland) BUA, North East, Larger "other coastal" town
+E35000002, Redcar BUASD, North East, Larger seaside town
+E35001196, Sunderland BUASD, North East, Larger "other coastal" town
+E34000188, Amble BUA, North East, Smaller seaside town
+E34002074, Blyth (Northumberland) BUA, North East, Larger "other coastal" town
+E34001750, Easington (County Durham) BUA, North East, Smaller "other coastal" town
+E35001161, Hartlepool BUASD, North East, Larger "other coastal" town
+E34002694, Newbiggin-by-the-Sea BUA, North East, Smaller seaside town
+E35001258, Peterlee BUASD, North East, Larger "other coastal" town
+E34002678, Saltburn-by-the-Sea BUA, North East, Smaller seaside town
+E34004190, Seaham BUA, North East, Larger "other coastal" town
+E35000405, South Shields BUASD, North East, Larger "other coastal" town
+E35000601, Whitburn BUASD, North East, Smaller "other coastal" town
+E34004204, Berwick-upon-Tweed BUA, North East, Smaller "other coastal" town
+E35001354, Tynemouth BUASD, North East, Larger "other coastal" town
+E35001492, Whitley Bay BUASD, North East, Larger seaside town
+E34000879, Marske-by-the-Sea BUA, North East, Smaller "other coastal" town
+E35000841, Birkenhead BUASD, North West, Larger "other coastal" town
+E34003462, Fleetwood BUA, North West, Larger seaside town
+E34000633, Southport BUA, North West, Larger seaside town
+E35000439, Whitehaven BUASD, North West, Larger "other coastal" town
+E35000575, Workington BUASD, North West, Larger "other coastal" town
+E35001061, Cleveleys BUASD, North West, Smaller seaside town
+E35000514, Crosby BUASD, North West, Larger "other coastal" town
+E35001007, Heysham BUASD, North West, Smaller "other coastal" town
+E34003862, Maryport BUA, North West, Smaller "other coastal" town
+E35001185, North Walney BUASD, North West, Smaller "other coastal" town
+E34004474, Preesall BUA, North West, Smaller "other coastal" town
+E35000398, Wallasey BUASD, North West, Larger "other coastal" town
+E34003078, Barrow-in-Furness BUA, North West, Larger "other coastal" town
+E35001472, Blackpool BUASD, North West, Larger seaside town
+E35000538, Bootle BUASD, North West, Larger "other coastal" town
+E35001056, Morecambe BUASD, North West, Larger seaside town
+E34004335, Formby BUA, North West, Larger seaside town
+E35001375, Hoylake BUASD, North West, Smaller seaside town
+E35001480, Seaton BUASD, North West, Smaller "other coastal" town
+E35001127, West Kirby BUASD, North West, Smaller seaside town
+E35000997, Lytham St Anne"s BUASD, North West, Larger seaside town
+E35001470, Liverpool BUASD, North West, Coastal city
+E35001397, Bexhill BUASD, South East, Larger seaside town
+E34004398, Dover BUA, South East, Larger "other coastal" town
+E35000639, Eastbourne BUASD, South East, Larger seaside town
+E35001192, Folkestone BUASD, South East, Larger seaside town
+E35001268, Hastings BUASD, South East, Larger seaside town
+E34001759, New Romney BUA, South East, Smaller seaside town
+E34001491, Sheerness BUA, South East, Smaller seaside town
+E34000490, Deal BUA, South East, Larger seaside town
+E35000986, East Cowes BUASD, South East, Smaller seaside town
+E34000109, Freshwater BUA, South East, Smaller seaside town
+E35001486, Herne Bay BUASD, South East, Larger seaside town
+E35001458, Margate BUASD, South East, Larger seaside town
+E35001373, Minster (Swale) BUASD, South East, Smaller "other coastal" town
+E34003343, Peacehaven BUA, South East, Smaller "other coastal" town
+E35001118, Portslade-by-Sea BUASD, South East, Smaller seaside town
+E35000923, Ramsgate BUASD, South East, Larger seaside town
+E35001361, Ryde BUASD, South East, Larger seaside town
+E35000516, Sandown BUASD, South East, Smaller seaside town
+E35001106, Shanklin BUASD, South East, Smaller seaside town
+E35000829, Southwick BUASD, South East, Smaller seaside town
+E34002686, Ventnor BUA, South East, Smaller seaside town
+E34004141, Newhaven BUA, South East, Smaller "other coastal" town
+E35000473, Whitstable BUASD, South East, Larger seaside town
+E34000852, Netley BUA, South East, Smaller "other coastal" town
+E35000153, Saltdean BUASD, South East, Smaller seaside town
+E34003761, Stubbington BUA, South East, Larger seaside town
+E35001171, Lymington BUASD, South East, Smaller "other coastal" town
+E34002766, Blackfield BUA, South East, Smaller "other coastal" town
+E35001155, Cowes BUASD, South East, Smaller seaside town
+E35000690, Littlehampton BUASD, South East, Larger seaside town
+E34002637, Selsey BUA, South East, Smaller seaside town
+E35001442, Shoreham-by-Sea BUASD, South East, Larger seaside town
+E34004154, Bognor Regis BUA, South East, Larger seaside town
+E35000699, East Wittering BUASD, South East, Smaller seaside town
+E35001479, Gosport BUASD, South East, Larger "other coastal" town
+E35001112, Hythe BUASD, South East, Smaller seaside town
+E34000231, Seaford BUA, South East, Larger seaside town
+E34003129, South Hayling BUA, South East, Smaller seaside town
+E35000565, Broadstairs BUASD, South East, Larger seaside town
+E35000148, Worthing BUASD, South East, Larger seaside town
+E35000260, Brighton and Hove BUASD, South East, Coastal city
+E35001312, Portsmouth BUASD, South East, Coastal city
+E35001237, Southampton BUASD, South East, Coastal city
+E35001234, Bideford BUASD, South West, Smaller "other coastal" town
+E35000462, Falmouth BUASD, South West, Larger seaside town
+E34000980, Hayle BUA, South West, Smaller seaside town
+E34002653, Ilfracombe BUA, South West, Smaller seaside town
+E34002180, Newquay BUA, South West, Larger seaside town
+E35001318, Paignton BUASD, South West, Larger seaside town
+E35000718, Penryn BUASD, South West, Smaller "other coastal" town
+E35000280, St Austell BUASD, South West, Larger "other coastal" town
+E35000334, St Blazey BUASD, South West, Smaller "other coastal" town
+E35001322, Weston-Super-Mare BUASD, South West, Larger seaside town
+E35001241, Weymouth BUASD, South West, Larger seaside town
+E34003104, Brixham BUA, South West, Smaller seaside town
+E34001067, Dawlish BUA, South West, Smaller seaside town
+E35000106, Northam BUASD, South West, Smaller seaside town
+E35001036, Teignmouth BUASD, South West, Smaller seaside town
+E34000830, Torpoint BUA, South West, Smaller "other coastal" town
+E35000355, Weston BUASD, South West, Smaller seaside town
+E35001146, Bournemouth BUASD, South West, Larger seaside town
+E35001476, Bude BUASD, South West, Smaller seaside town
+E35000507, Burnham-on-Sea BUASD, South West, Larger seaside town
+E34002161, Looe BUA, South West, Smaller seaside town
+E34000469, Minehead BUA, South West, Smaller seaside town
+E35000926, Penzance BUASD, South West, Smaller seaside town
+E34004338, St Ives (Cornwall) BUA, South West, Smaller seaside town
+E35001315, Torquay BUASD, South West, Larger seaside town
+E35000835, Christchurch BUASD, South West, Larger seaside town
+E34003928, Clevedon BUA, South West, Larger seaside town
+E34004282, Swanage BUA, South West, Smaller seaside town
+E34000242, Budleigh Salterton BUA, South West, Smaller seaside town
+E35000255, Plymstock BUASD, South West, Larger "other coastal" town
+E34001039, Portishead BUA, South West, Larger "other coastal" town
+E34000796, Sidmouth BUA, South West, Smaller seaside town
+E34000403, Exmouth BUA, South West, Larger seaside town
+E34003892, Saltash BUA, South West, Smaller "other coastal" town
+E34004484, Bridport BUA, South West, Smaller "other coastal" town
+E35000831, Dartmouth BUASD, South West, Smaller seaside town
+E34004441, Kingsbridge BUA, South West, Smaller "other coastal" town
+E35000801, Poole BUASD, South West, Larger seaside town
+E34003628, Seaton (East Devon) BUA, South West, Smaller seaside town
+E35001398, Plymouth BUASD, South West, Coastal city
+E34002993, Barton-upon-Humber BUA, Yorkshire and The Humber, Smaller "other coastal" town
+E35000950, Bridlington BUASD, Yorkshire and The Humber, Larger seaside town
+E35001011, Cleethorpes BUASD, Yorkshire and The Humber, Larger seaside town
+E34002712, Filey BUA, Yorkshire and The Humber, Smaller seaside town
+E34000589, Hornsea BUA, Yorkshire and The Humber, Smaller seaside town
+E34003793, Withernsea BUA, Yorkshire and The Humber, Smaller seaside town
+E35001320, Grimsby BUASD, Yorkshire and The Humber, Larger "other coastal" town
+E35000529, Immingham BUASD, Yorkshire and The Humber, Smaller "other coastal" town
+E34004408, Scarborough BUA, Yorkshire and The Humber, Larger seaside town
+E34003687, Whitby BUA, Yorkshire and The Humber, Smaller seaside town
+E35000523, Hessle BUASD, Yorkshire and The Humber, Smaller "other coastal" town
+E35001335, Kingston upon Hull BUASD, Yorkshire and The Humber, Coastal city
