@@ -62,7 +62,6 @@ def plot(df, column_to_plot, chart_title, y_label, y_min='default', y_max='defau
 # Get [English Prescribing Data](https://www.nhsbsa.nhs.uk/prescription-data/prescribing-data/english-prescribing-data-epd) for monthly items and quantity for BNF codes from codelists:
 # - [Oral ADT](https://www.opencodelists.org/codelist/user/agleman/oral-adt-prostate-ca-dmd/1e2a36a0/)
 # - [Injectable ADT](https://www.opencodelists.org/codelist/user/agleman/adt-injectable-dmd/20f9318d/)
-#
 
 # +
 #OpenPrescribing BNF codes
