@@ -15,12 +15,11 @@
 # ---
 
 # ### Notebook to investigate parenteral opioid dispensing trends
-# A notebook using [English Prescribing Data](https://www.nhsbsa.nhs.uk/prescription-data/prescribing-data/english-prescribing-data-epd) to investigate trends in parenteral opioid dispensing.
+# A notebook using [English Prescribing Data](https://www.nhsbsa.nhs.uk/prescription-data/prescribing-data/english-prescribing-data-epd) to investigate trends in parenteral opioid dispensing data.
 # - [Imports](#IMPORTS)
 # - [Standard functions](#FUNCTIONS)
-# - [OpenPrescribing BNF codes](#OPBNF)
-# - [Item / quantity plots](#CHARTS)
-# - [Injections of different durations](#INJDURATION)
+# - [OpenPrescribing data extract](#OPBNF)
+# - [Item plots](#CHARTS)
 
 # <a id='IMPORTS'></a>
 # ### Imports
@@ -56,8 +55,8 @@ def plot(df, column_to_plot, chart_title, y_label, y_min='default', y_max='defau
 
 
 # <a id='OPBNF'></a>
-# ### OpenPrescribing BNF codes
-# Get [English Prescribing Data](https://www.nhsbsa.nhs.uk/prescription-data/prescribing-data/english-prescribing-data-epd) for monthly items and quantity based on BNF codes in codelist.
+# ### OpenPrescribing data extract
+# Get [English Prescribing Data](https://www.nhsbsa.nhs.uk/prescription-data/prescribing-data/english-prescribing-data-epd) from BigQuery for monthly items based on BNF codes in this [codelist](https://www.opencodelists.org/codelist/opensafely/opioid-containing-medicines-parenteral-excluding-drugs-for-substance-misuse-dmd/55a533f9/).
 
 # +
 #OpenPrescribing BNF codes
