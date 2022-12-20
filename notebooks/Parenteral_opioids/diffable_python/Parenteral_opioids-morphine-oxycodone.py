@@ -97,7 +97,7 @@ plot(
     chart_title="SC oxycodone items per month", 
     y_label='Items', 
     y_min=0, 
-    y_max=OP_DF['ParenteralOxycodone'].max() * 1.05, 
+    y_max=OP_DF['SCOxycodone'].max() * 1.05, 
 )
 
 
